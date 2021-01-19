@@ -1,5 +1,7 @@
-
 #!/usr/bin/env python3
+
+# Reverse shell Written by NOCH in python3 #
+# Run this server listener then execute client on target machine #
 
 import socket
 
