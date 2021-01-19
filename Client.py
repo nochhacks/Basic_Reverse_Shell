@@ -13,10 +13,6 @@ server = socket.socket()
 # Connect to server
 server.connect((SERVER_HOST, SERVER_PORT))
 
-# Debugging purposes
-# msg = server.recv(BUFFER_SIZE).decode()
-# print("SERVER:", msg)
-
 # Receive and execute command
 while True:
     # Receive
