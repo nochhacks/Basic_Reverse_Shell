@@ -21,10 +21,6 @@ client_conn, client_addr = server.accept()
 connection = "[+] {0}:{1} Connected successfully.".format(client_addr[0], client_addr[1])
 print(connection)
 
-# Debugging purposes
-#msg = "Connection working perfectly!".encode()
-#client_conn.send(msg)
-
 # Shell Commands loop
 while True:
     # command input
