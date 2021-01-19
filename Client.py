@@ -9,7 +9,7 @@ import socket
 import subprocess
 import os
 
-SERVER_HOST = "192.168.1.226" # CHANGE ME
+SERVER_HOST = "x.x.x.x" # CHANGE ME TO YOUR IP
 SERVER_PORT = 443 # CHANGE ME
 BUFFER_SIZE = 4096 # Send 4KB at a time
 
