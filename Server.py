@@ -3,7 +3,7 @@
 # Reverse Shell Written by NOCH in Python3 #
 
 # Run this listening server on your machine, then execute the client on target machine #
-# Change SERVER_HOST and SERVER_PORT accordingly #
+# Change SERVER_HOST / SERVER_PORT accordingly #
 
 import socket
 
