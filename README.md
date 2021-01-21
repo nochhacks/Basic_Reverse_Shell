@@ -28,7 +28,7 @@ In the Basic_Reverse_Shell folder, make the setup.sh script executable:
 Run the setup script:
 <pre>./setup.sh</pre>
 
-This script will install dos2unix and convert the DOS-style line endings to UNIX-style line endings, as well as grant the script execute permissions. Ensure you are running setup.sh as a sudoer. 
+This script will install dos2unix and convert the DOS-style line endings to UNIX-style line endings, as well as grant the script execute permissions. Ensure you are running setup.sh as a sudoer, or at least have sudo access to both <pre>apt</pre> and <pre>chmod</pre>. 
 
 <b>If you wish to change the line ending styles you can do so manually with dos2unix / unix2dos:</b>
 
