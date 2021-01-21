@@ -7,8 +7,9 @@ The Server.py script listens for incoming connections, until the Client.py scrip
 This script will not work over the internet by default; in order to achieve this you will need to port forward.
 
 # Prerequisites
-* The server ideally must run on a UNIX based system
+* The server ideally must run on a DEBIAN based system
 * Sudo privileges
+* Basic understanding of python3 variables
 
 # Installation
 Grab the script in any way you want:
