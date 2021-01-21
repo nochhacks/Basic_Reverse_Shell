@@ -19,6 +19,7 @@ Grab the script in any way you want:
 
 2) Directly download the ZIP file from the "Code" section above the landing page.
 
+
 <b>(Linux Only!)</b>
 
 In the Basic_Reverse_Shell folder, make the setup.sh script executable:
@@ -29,7 +30,7 @@ Run the setup script:
 
 This script will install dos2unix and convert the DOS-style line endings to UNIX-style line endings, as well as grant the script execute permissions. Ensure you are running setup.sh as a sudoer. 
 
-If you wish to change the line ending styles you can do so manually with dos2unix / unix2dos:
+<b>If you wish to change the line ending styles you can do so manually with dos2unix / unix2dos:</b>
 
 <pre>dos2unix file.py</pre>
 <b>Or</b>
