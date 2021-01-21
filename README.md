@@ -42,4 +42,4 @@ In the Basic_Reverse_Shell folder, give both scripts execute permissions and con
 3) Run the Server.py script first from the command line:
 <pre>./Server.py</pre>
 
-4) Then run the Client.py script through python, or through the command line. Depending on the client OS, you may need to manually convert the line ending style using <pre>dos2unix</pre>.
+4) Then run the Client.py script through python, or through the command line. Depending on the client OS, you may need to manually convert the line ending style using <b>dos2unix</b>.
