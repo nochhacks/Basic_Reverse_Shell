@@ -10,6 +10,7 @@ This script will not work over the internet by default; in order to achieve this
 * The server ideally must run on a DEBIAN based system
 * Sudo privileges
 * Basic understanding of python3 variables
+* An installation of dos2unix
 
 # Installation
 Grab the script in any way you want:
@@ -22,13 +23,9 @@ Grab the script in any way you want:
 
 <b>(Linux Only!)</b>
 
-In the Basic_Reverse_Shell folder, make the setup.sh script executable:
-<pre>cd Basic_Reverse_Shell && chmod +x setup.sh</pre>
-
-Run the setup script:
-<pre>./setup.sh</pre>
-
-This script will install dos2unix and convert the DOS-style line endings to UNIX-style line endings, as well as grant the script execute permissions. Ensure you are running setup.sh as a sudoer, or at least have sudo access to both <b>apt</b> and <b>chmod</b>. 
+In the Basic_Reverse_Shell folder, give both scripts execute permissions and convert the line endings to UNIX.
+<pre>cd Basic_Reverse_Shell</pre> 
+<pre>sudo apt install -y dos2unix && chmod +x *.py && dos2unix *.py</pre>
 
 <b>If you wish to change the line ending styles you can do so manually with dos2unix / unix2dos:</b>
 
