@@ -6,16 +6,20 @@ The Server.py script listens for incoming connections, until the Client.py scrip
 
 This script will not work over the internet by default; in order to achieve this you will need to port forward.
 
+Goes without saying, but I will say it anyway. Do not use either scripts on machines that are not your own, or that you do not have permission to use. You can be prosecuted for computer misuse!
+
 # Prerequisites
-* The server ideally must run on a DEBIAN based system
+* The server must run on a UNIX based system.
+* An installation of Python3
 * Sudo privileges
-* Basic understanding of python3 variables
-* An installation of dos2unix
+* Basic understanding of Python3 variables
 
 # Installation
 Grab the script in any way you want:
 
 1) Clone the repository:
+(It is recommended to change your git core.autocrlf to input before doing so!)
+<pre>git config --global core.autocrlf input</pre>
 <pre>git clone https://github.com/nochhacks/Basic_Reverse_Shell</pre>
 
 2) Directly download the ZIP file from the "Code" section above the landing page.
@@ -23,15 +27,10 @@ Grab the script in any way you want:
 
 <b>(Linux Only!)</b>
 
-In the Basic_Reverse_Shell folder, give both scripts execute permissions and convert the line endings to UNIX.
+In the Basic_Reverse_Shell folder, give Server.py permissions to execute.
 <pre>cd Basic_Reverse_Shell</pre> 
-<pre>sudo apt install -y dos2unix && chmod +x *.py && dos2unix *.py</pre>
+<pre>sudo chmod +x Server.py</pre>
 
-<b>If you wish to change the line ending styles you can do so manually with dos2unix / unix2dos:</b>
-
-<pre>dos2unix file.py</pre>
-<b>Or</b>
-<pre>unix2dos file.py</pre>
 
 # Usage
 
@@ -42,4 +41,4 @@ In the Basic_Reverse_Shell folder, give both scripts execute permissions and con
 3) Run the Server.py script first from the command line:
 <pre>./Server.py</pre>
 
-4) Then run the Client.py script through python, or through the command line. Depending on the client OS, you may need to manually convert the line ending style using <b>dos2unix</b>.
+4) Then run the Client.py script on the target machine; through Python3, or through the command line.
